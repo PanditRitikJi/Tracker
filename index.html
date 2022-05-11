@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    
+    <link rel="stylesheet" href="Dashboard.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://kit.fontawesome.com/dda8ac526f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2004',  1000,      400],
+          ['2005',  1170,      460],
+          ['2006',  660,       1120],
+          ['2007',  1030,      540]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+
+      function open(){
+          document.getElementsByClassName("leftHeader").style.display = 'block';
+          document.getElementsByClassName("leftHeader").style.display = 'block ';
+      }
+      function close(){
+        document.getElementsByClassName("leftHeader").style.display = 'none';
+        document.getElementsByClassName("leftHeader").style.display = 'none';
+      }   
+       </script>
+       <script src="https://kit.fontawesome.com/dda8ac526f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="leftHeader">
+            <h2>tracker</h2>
+        </div>
+        <button class="toggle" id="demo1" ><i class="fa-solid fa-bars"></i></button>
+        <h2 class=" toggle toggle-heading" >tracker</h2>
+    
+        <i class="fa-solid fa-magnifying-glass toggle " id="toggle-search"></i>
+        <i class="fa-solid fa-bell toggle " id="toggle-notification"></i>
+        <i class="fa-solid fa-ellipsis-vertical toggle " id="toggle-notificationn"></i>
+        <div class="rightHeader">
+            <div class="search" ><i class="fa-solid fa-magnifying-glass"></i><input class="search" type="text" placeholder="Search:."></div>
+            <div class="headerimg"><img class="headimage" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+        </div>
+    </div>
+    <hr id="headerPartition">
+    <div class="container">
+        <div class="leftSideBar">
+            <ul>
+                <li> <a href="C:\Users\pandi\OneDrive\Desktop\WebKnot1\index.html"> <div class="li">Dashboard</div></a></li>
+                <li> <a href="C:\Users\pandi\OneDrive\Desktop\WebKnot1\Issues.html"> <div class="li">Issues</div> </a></li>
+                <li> <a href="C:\Users\pandi\OneDrive\Desktop\WebKnot1\Create.html"> <div class="li">Create</div> </a></li>
+            </ul>
+        </div>
+        <div class="rightSideBar">
+            <div class="heading">
+                <h2 class="dashboard">Dashboard</h2>
+                <p class="dashboard">for January 2019</p>
+            </div>
+            <div class="graph" id="curve_chart" ></div>
+            <div class="issues">
+            <div class="highPriority">
+                <h2 class="high">High Priority</h2>
+                <hr class="line">
+                <div class="issue">
+                    <div class="issueTop">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <p class="issueDate">January 15 2019</p>
+                </div>
+                <p class="issueDisc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, odit?
+                </p>
+
+                </div>
+                <hr class="line">
+                <div class="issue">
+                    <div class="issueTop">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <p class="issueDate">January 15 2019</p>
+                </div>
+                <p class="issueDisc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, odit?
+                </p>
+
+                </div>
+                <hr class="line">
+                <div class="issue">
+                    <div class="issueTop">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <p class="issueDate">January 15 2019</p>
+                </div>
+                <p class="issueDisc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, odit?
+                </p>
+
+                </div>
+                <hr class="line">
+                <div class="issue">
+                    <div class="issueTop">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <p class="issueDate">January 15 2019</p>
+                </div>
+                <p class="issueDisc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, odit?
+                </p>
+
+                </div>
+            </div>
+            <div class="highPriority">
+                <h2 class="high">Recently upadted issue</h2>
+                <hr class="line">
+                <div class="issue">
+                    <div class="issueTop">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <p class="issueDate">January 15 2019</p>
+                </div>
+                <p class="issueDisc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, odit?
+                </p>
+
+                </div>
+                <hr class="line">
+                <div class="issue">
+                    <div class="issueTop">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <p class="issueDate">January 15 2019</p>
+                </div>
+                <p class="issueDisc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, odit?
+                </p>
+
+                </div>
+                <hr class="line">
+                <div class="issue">
+                    <div class="issueTop">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <p class="issueDate">January 15 2019</p>
+                </div>
+                <p class="issueDisc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, odit?
+                </p>
+
+                </div>
+                <hr class="line">
+                <div class="issue">
+                    <div class="issueTop">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <p class="issueDate">January 15 2019</p>
+                </div>
+                <p class="issueDisc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, odit?
+                </p>
+
+                </div>
+            </div>
+            <div class="highPriority">
+                <h2 class="high">All Issue</h2>
+                <hr class="line">
+                <div class="issue">
+                    <div class="userDisc">
+                        <div class="img"><img class="image" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+                        <div>
+                    <h3>Ritik Shukla</h3>
+                    <p class="designation">Software devloper</p>
+                </div>
+                </div>
+                <div class="progress">
+                    <progress id="yellow" value="90" max="100"> 72% </progress>
+                </div>
+                <div class="numberOfIssue">
+                    <p>High priority issue: <b class="bold"> 9</b></p>
+                    <p class="totalIssue">Total Issue:<b class="bold"> 10</b></p>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="issue">
+                <div class="userDisc">
+                    <div class="img"><img class="image" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+                    <div>
+                <h3>Ritik Shukla</h3>
+                <p class="designation">Software devloper</p>
+            </div>
+            </div>
+            <div class="progress">
+                <progress id="yellow" value="90" max="100"> 72% </progress>
+            </div>
+            <div class="numberOfIssue">
+                <p>High priority issue: <b class="bold"> 9</b></p>
+                <p class="totalIssue">Total Issue: <b class="bold"> 10</b></p>
+            </div>
+        </div>
+        <hr class="line">
+        <div class="issue">
+            <div class="userDisc">
+                <div class="img"><img class="image" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+                <div>
+            <h3>Ritik Shukla</h3>
+            <p class="designation">Software devloper</p>
+        </div>
+        </div>
+        <div class="progress">
+            <progress id="yellow" value="90" max="100"> 72% </progress>
+        </div>
+        <div class="numberOfIssue">
+            <p>High priority issue:<b class="bold"> 9</b></p>
+            <p class="totalIssue">Total Issue:<b class="bold"> 10</b></p>
+        </div>
+    </div>
+    <hr class="line">
+    <div class="issue">
+        <div class="userDisc">
+            <div class="img"><img class="image" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+            <div>
+        <h3>Ritik Shukla</h3>
+        <p class="designation">Software devloper</p>
+    </div>
+    </div>
+    <div class="progress">
+        <progress id="yellow" value="90" max="100"> 72% </progress>
+    </div>
+    <div class="numberOfIssue">
+        <p>High priority issue:<b class="bold"> 9</b></p>
+        <p class="totalIssue">Total Issue: <b class="bold"> 10</b></p>
+    </div>
+</div>
+                
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    
+    <script>
+        
+        document.getElementById("demo1").onclick = function(){open()}
+                  function open() {
+
+                  
+                  if(document.getElementsByClassName("leftSideBar")[0].style.display == 'block'){
+                      document.getElementsByClassName("leftSideBar")[0].style.display = 'none'
+                  }
+                  else {
+                      document.getElementsByClassName("leftSideBar")[0].style.display = 'block'
+                  }
+                   console.log("helloo");
+}
+    </script>
+    
+</body>
+</html>

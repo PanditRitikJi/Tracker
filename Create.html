@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="Create.css">
+    <script src="https://kit.fontawesome.com/dda8ac526f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="leftHeader">
+            <h2>tracker</h2>
+        </div>
+        <button class="toggle" id="demo1" ><i class="fa-solid fa-bars"></i></button>
+        <h2 class=" toggle toggle-heading" >tracker</h2>
+    
+        <i class="fa-solid fa-magnifying-glass toggle " id="toggle-search"></i>
+        <i class="fa-solid fa-bell toggle " id="toggle-notification"></i>
+        <i class="fa-solid fa-ellipsis-vertical toggle " id="toggle-notificationn"></i>
+        <div class="rightHeader">
+            <div class="search" ><i class="fa-solid fa-magnifying-glass"></i><input class="search" type="text" placeholder="Search:."></div>
+            <div class="headerimg"><img class="headimage" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+        </div>
+    </div>
+    <hr id="headerPartition">
+    <div class="container">
+        <div class="leftSideBar">
+            <ul>
+                <li> <a href="C:\Users\pandi\OneDrive\Desktop\WebKnot1\index.html"> <div class="li">Dashboard</div></a></li>
+                <li> <a href="C:\Users\pandi\OneDrive\Desktop\WebKnot1\Issues.html"> <div class="li">Issues</div> </a></li>
+                <li> <a href="C:\Users\pandi\OneDrive\Desktop\WebKnot1\Create.html"> <div class="li">Create</div> </a></li>
+            </ul>
+        </div>
+        <div class="rightSideBar">
+            <div class="heading">
+                <h1 class="dashboard">Create</h1>
+            </div>
+                <div class="form">
+                    <label class="label title" for="">Title:</label> <br>
+                    <input class="title" type="text">
+                    <div class="section">
+                        <div class="leftForm">
+                            <label class="label smallbox" for="">Type:</label><br>
+                            <select class="smallbox select" name="" id=""></select><br>
+                            
+                            <label for="" class="label smallbox">Priority:</label><br>
+                            <select class="smallbox select" name="" id=""></select><br>
+                            
+                            <label for="" class="label smallbox">Affects Version/s: </label><br>
+                            <input class="smallbox" type="text" name="" id=""><br>
+                            <label for="" class="label smallbox">Components/s: </label><br>
+                            <input class="smallbox" type="text" name="" id=""><br>
+                            <label for="" class="label smallbox">Labels: </label><br>
+                            <input class="smallbox" type="text" name="" id=""><br>
+                            <label for=""class="label smallbox">Sprint:</label><br>
+                            <input class="smallbox" type="text" name="" id=""><br>
+                            <label for=""class="label smallbox">Story Points: </label><br>
+                            <input class="smallbox" type="text" name="" id=""><br>
+                        </div>
+                        <div class="rightForm">
+                            <label for="" class="label smallbox">Status: </label><br>
+                            <input class="smallbox" type="text" name="" id=""><br>
+                            <label for="" class="label smallbox">Resolution: </label><br>
+                            <input class="smallbox" type="text" name="" id=""><br>
+                            <label for="" class="label smallbox" >Fix Version/s:</label><br>
+                            <select class="smallbox select" name="" id=""></select><br>
+                            
+                            <label for="" class="label smallbox">Assignee:</label><br>
+                            <select class="smallbox select" name="" id=""></select><br>
+                            
+                            <label for="" class="label smallbox">Reporter: </label><br>
+                            <input class="smallbox" type="text" name="" id=""><br>
+                            <label for="" class="label smallbox">Discription: </label><br>
+                            <input class="smallbox" type="text" name="" id=""><br>
+                            <button class="submit" >Submit ></button>
+                        </div>
+                    </div>    
+                </div>
+            
+            </div>
+            </div>
+
+            <script>
+                document.getElementById("demo1").onclick = function(){open()}
+                          function open() {
+  
+                          if(document.getElementsByClassName("leftSideBar")[0].style.display == 'block'){
+                              document.getElementsByClassName("leftSideBar")[0].style.display = 'none'
+                          }
+                          else {
+                              document.getElementsByClassName("leftSideBar")[0].style.display = 'block'
+                          }
+                           console.log("helloo");
+  }
+            </script>
+</body>
+</html>
